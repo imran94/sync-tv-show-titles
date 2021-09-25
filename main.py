@@ -39,10 +39,7 @@ if len(sys.argv) > 2:
     directory = sys.argv[2]
 
 page = requests.get(url)
-soup = BeautifulSoup(page, "lxml")
-
-# with open("html.txt", "r") as f:
-#     soup = BeautifulSoup(f, 'lxml')
+soup = BeautifulSoup(page.content, "lxml")
 
 episodes = {}
 for title in soup.find_all("h4", class_="list-group-item-heading"):

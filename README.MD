@@ -1,5 +1,5 @@
 # sync-tv-show-titles
-A Python script to add the correct season and episode numbering to a TV Show episode files using the TVDB website
+A Python script which renames the episode files of a TV Show to their correct season and episode numbers by parsing the TVDB website, using BeautifulSoup.
 
 Command:
 python main.py [TV show name in TVDB URL] path/to/TVShow
